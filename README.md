@@ -1,6 +1,6 @@
 # FreeDA: Training-Free Open-Vocabulary Segmentation with Offline Diffusion-Augmented Prototype Generation (CVPR 2024)
 
-This is the repository that contains source code for the [FreeDA website](https://freeda.github.io).
+This is the repository that contains source code for the [FreeDA website](https://aimagelab.github.io/freeda/).
 
 If you find FreeDA useful for your work please cite:
 ```
