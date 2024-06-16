@@ -1,0 +1,44 @@
+_base_: "default.yml"
+
+model:
+  type: FreeDA
+  clip_model: ViT-L-14
+  clip_weights: openai
+  backbone_model_name: vit_large_patch14_dinov2.lvd142m
+  collection_index: ./data/faiss_index/knn.index
+  k_search: 350
+  k_clustering: 1
+  last_attn_keys: false
+  collection_embeddings: ./data/prototype_embeddings
+  use_mask_proposer: true
+  mask_proposer: "superpixel"
+  ensemble_dino_clip: 0.8
+  ensemble_max_mean: 1.0
+  masker:
+    type: Masker
+    decoder:
+      type: GDecoder
+      double: true
+      n_layers: 2
+      kernel_size: 3
+      act: gelu
+      norm: ln
+    sim2mask:
+      gumbel_tau: 1.0
+  save_mask_cut_masks: false
+  save_mask_cut_masks_dir: null
+  category_pre_filtering: false
+  save_category_pre_filtering: false
+  save_category_pre_filtering_dir: null
+  region_pooling: true
+  embedding_list_dir: null
+  save_dino_features: false
+  save_dino_features_dir: null
+  save_clip_features: false
+  save_clip_features_dir: null
+  superpixel:
+    algorithm: "felzenszwalb"
+    min_size: 50
+    scale: 20
+    sigma: 0.5
+  prototype_mean: true
