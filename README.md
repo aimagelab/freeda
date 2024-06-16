@@ -4,7 +4,7 @@
 
 <div align="center">
 <figure>
-  <img alt="Qualitative results" src="./assets/qualitatives1.png">
+  <img alt="Qualitative results" src="./src/assets/qualitatives1.png">
 </figure>
 </div>
 
@@ -12,7 +12,7 @@
 
 <div align="center">
 <figure>
-  <img alt="FreeDA method" src="./assets/inference.png">
+  <img alt="FreeDA method" src="./src/assets/inference.png">
 </figure>
 </div>
 
@@ -21,14 +21,14 @@
 <details>
 <summary> Additional qualitative examples </summary>
 <p align="center">
-  <img alt="Additional qualitative results" src="./assets/qualitatives.png" width="800" />
+  <img alt="Additional qualitative results" src="./src/assets/qualitatives.png" width="800" />
 </p>
 </details>
 
 <details>
 <summary> Additional examples <i>in-the-wild</i> </summary>
 <p align="center">
-  <img alt="in-the-wild examples" src="./assets/into_the_wild.png" width="800" />
+  <img alt="in-the-wild examples" src="./src/assets/into_the_wild.png" width="800" />
 </p>
 </details>
 
